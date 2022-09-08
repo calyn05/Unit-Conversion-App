@@ -1,0 +1,27 @@
+{
+  "name": "unit-conversion-app",
+  "version": "1.0.0",
+  "description": "metric imperial converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calyn05/Unit-Conversion-App.git"
+  },
+  "keywords": [
+    "metric",
+    "imperial",
+    "converter"
+  ],
+  "author": "calyn05",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calyn05/Unit-Conversion-App/issues"
+  },
+  "homepage": "https://github.com/calyn05/Unit-Conversion-App#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

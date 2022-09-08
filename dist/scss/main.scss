@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;700;800&display=swap");
+
+$section-input__color: linear-gradient(270deg, #ed4880, #f38b17);
+$color-black: #000000;
+$color-white: #ffffff;
+
+$ff-serif: "Heebo", sans-serif;
+
+$font-weight: (
+  "extra-bold": 800,
+  "bold": 700,
+  "regular": 300,
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: $ff-serif;
+  background-color: $color-black;
+  color: $color-white;
+  font-weight: map-get($font-weight, bold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  .main-container {
+    max-width: 80vw;
+    max-height: 80vh;
+    text-align: center;
+
+    .input-section {
+      background-image: $section-input__color;
+      padding: 7% 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .result-section {
+      background-color: $color-white;
+      color: $color-black;
+      padding-bottom: 2rem;
+
+      h2 {
+        padding-top: 2em;
+      }
+
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+#number-input {
+  background: none;
+  border: none;
+  font-size: 5rem;
+  color: $color-white;
+  width: 100%;
+  text-align: center;
+  font-weight: map-get($font-weight, extra-bold);
+}
