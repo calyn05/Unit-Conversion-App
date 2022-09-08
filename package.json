@@ -2,7 +2,7 @@
   "name": "unit-conversion-app",
   "version": "1.0.0",
   "description": "metric imperial converter",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "node app.js"
   },
